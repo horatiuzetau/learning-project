@@ -1,0 +1,10 @@
+
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(«Â—à8§®‚—¡1
+g	java:S112B"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¨®‚—¡1
+g	java:S112o"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¨®‚—¡1
+h	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(Ü¹¤ùÿÿÿÿ8¨®‚—¡1
+h	java:S112º"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8®÷„—¡1
+i
+java:S1192V"LDefine a constant instead of duplicating this literal "Connection " 3 times.(â…Çá8©®‚—¡1
+e
+java:S2276~"CReplace the call to "Thread.sleep(...)" with a call to "wait(...)".(ƒş‹áÿÿÿÿÿ8Á®‚—¡1
