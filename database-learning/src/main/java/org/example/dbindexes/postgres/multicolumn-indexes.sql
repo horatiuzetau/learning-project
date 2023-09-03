@@ -24,6 +24,7 @@ from test_multicolumn_index_table
 where a = 5
   and b = 6;
 
+
 -- Example 1 - testing multiple situations for a multi-column index on (a,b)
 ------------------------------------------------------------
 -- Create multicolumn index for a, b
@@ -63,7 +64,6 @@ from test_multicolumn_index_table
 where a > 5
   and b < 6;
 
-
 -- d) a > 5 or b < 6
 -- output: Seq Scan on test_multicolumn_index_table
 --         Filter: ((a > 5) OR (b < 6))
@@ -81,9 +81,9 @@ where a > 5
 --  - when using the AND operator, multi-column index is getting used
 
 
-
 -- Example 3 - before creating indexes for (d, e)
 ------------------------------------------------------------
+
 -- output: Index Scan using test_multicolumn_index_table_e_key on test_multicolumn_index_table
 --           Index Cond: (e = 6)
 --           Filter: (d = 5)

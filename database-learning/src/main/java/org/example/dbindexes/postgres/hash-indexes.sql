@@ -10,6 +10,7 @@ create table test_hash_index_table
     non_uq_indexed bigint
 );
 
+
 -- Example 1 - using hash index on ID (PRIMARY KEY) column
 ------------------------------------------------------------
 -- The documentation states that unique indexes can only be created as B-TREES
@@ -24,7 +25,6 @@ explain
 select *
 from test_hash_index_table
 where id = 5;
-
 
 -- If using the id with operators like > or <, then the PK index is used
 -- output: "Bitmap Index Scan on test_hash_index_table_pkey"
@@ -45,7 +45,6 @@ explain
 select *
 from test_hash_index_table
 where uq_indexed = 1;
-
 
 -- output: "Bitmap Index Scan on test_hash_index_table_uq_indexed_key"
 -- This means that the unique index is used here, but if we're using equality, the hash index is used.
