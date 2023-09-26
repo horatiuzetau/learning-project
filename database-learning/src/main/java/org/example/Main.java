@@ -3,11 +3,18 @@ package org.example;
 import org.example.dbconnectionpool.DBConnectionPoolService;
 
 import java.util.List;
+import org.example.functionalinterfaces.FunctionalInterfaceService;
 
 public class Main {
 
     public static void main(String[] args) {
         testDBConnectionPool();
+//        testFunctionalInterface();
+    }
+
+    public static void testFunctionalInterface() {
+        var functionalInterfaceService = new FunctionalInterfaceService();
+        functionalInterfaceService.testFunctionalInterface();
     }
 
     public static void testDBConnectionPool() {
