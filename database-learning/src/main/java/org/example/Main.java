@@ -4,12 +4,19 @@ import org.example.dbconnectionpool.DBConnectionPoolService;
 
 import java.util.List;
 import org.example.functionalinterfaces.FunctionalInterfaceService;
+import org.example.reflection.ReflectionTestService;
 
 public class Main {
 
     public static void main(String[] args) {
-        testDBConnectionPool();
+//        testDBConnectionPool();
 //        testFunctionalInterface();
+        testReflection();
+    }
+
+    public static void testReflection() {
+        var reflectionTestService = new ReflectionTestService();
+        reflectionTestService.testReflection();
     }
 
     public static void testFunctionalInterface() {
